@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>tcl</title>
+	<link rel="stylesheet" href="blog.css">
+</head>
+<body>
+<div class="container">
+        <h1>
+       Transaction control language.
+        
+    </h1>
+    </div>
+    <br>
+    <hr>
+    <p>In SQL, TCL stands for Transaction control language.
+      A single unit of work in a database is formed after the consecutive execution of commands is known as a transaction.
+      There are certain commands present in SQL known as TCL commands that help the user manage the transactions that take place in a database.
+    </p>
+    <h2> what is commit?</h2>
+    <p>COMMIT command in SQL is used to save all the transaction-related changes permanently to the disk. Whenever DDL commands such as INSERT, UPDATE and DELETE are used, the changes made by these commands are permanent only after closing the current session. So before closing the session, one can easily roll back the changes made by the DDL commands. Hence, if we want the changes to be saved permanently to the disk without closing the session, we will use the commit command.
+    </p>
+    <p><strong>Syntax-commit;  </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/commit.png" alt="database"><br><br><hr>
+    <h2> what is commit?</h2>
+    <p>While carrying a transaction, we must create savepoints to save different parts of the transaction. According to the user's changing requirements, he/she can roll back the transaction to different savepoints. Consider a scenario: We have initiated a transaction followed by the table creation and record insertion into the table. After inserting records, we have created a savepoint INS. Then we executed a delete query, but later we thought that mistakenly we had removed the useful record. Therefore in such situations, we have an option of rolling back our transaction. In this case, we have to roll back our transaction using the ROLLBACK command to the savepoint INS, which we have created before executing the DELETE query.
+    </p>
+    <p><strong>Syntax-Rollback to savepoint_name;  </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/rollback.png" alt="database"><br><br><hr>
+     <i><strong>For homepage  on next.</strong></i><br><br>
+    <form action="index.html">
+        <button class="gfg" type="submit"> next</button>
+    </form>
+    
+
+</body>
+</html>

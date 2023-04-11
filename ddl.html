@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ddl</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <div class="container">
+        <h1>
+        Data Definitiion Language(DDL)
+        
+    </h1>
+    </div>
+    <br>
+    <hr>
+
+    <p>
+        It is a type of sql command used to define the components of databases using database 
+        management systems . DDL in DBMS is used to create  or modify the databse objects like
+        tables, view etc. These commands deal with defining a schema and adding a table description
+        to it. 
+    </p>
+    <p>
+        Data Definition Language(DDL) commands in DBMS are used to define the database objects. We can create,
+         delete and alter tables using DDL commands. Since a database structure is designed by DDL commands, they are called Data Definition 
+         Languages (DDLs). They consist of commands such as CREATE, ALTER, TRUNCATE, and DROP.
+
+          When any data is being stored in a database, we need to create tables and define their structure DDL commands 
+          are used to do the same.
+
+         For example, if a school wants to store its data in a database then we need to create tables like students and teachers. Furthermore, we need to define the structure of tables,
+          for instance, the student's table will have columns like their roll no, name, age, date of birth, address, etc.
+    </p>
+    <h2> how to create database?</h2>
+    <p>We can create a new database in MySQL by using the CREATE DATABASE statement with the below syntax:</p>
+    <p><strong>Syntax- CREATE DATABASE </strong>[IF NOT EXISTS] database_name ; </p>
+    <h2>Example:</h2>
+    <p>Let us understand how to create a database in MySQL with the help of an example. Open the MySQL console and write down the password,
+         if we have set during installation. Now we are ready to create a database. Here, we are going to create a database name 
+        "school" using the following statement:</p>
+    <p><strong >MySQL> CREATE DATABASE school;</strong></p>  
+    <img src="ddl/cd.png" alt="database"><br><br><hr>
+    <h2>How to show databases?</h2>
+    <p>We can review the newly created database using the below query that returns the database name, 
+        character set, and collation of the database:</p>
+
+     <p><strong> mysql> SHOW DATABASES ; </strong> </p>
+     <h3>Example:</h3>
+     <img src="ddl/show.PNG" alt="show"><br><br><hr>
+     <h2>How to Drop a database?</h2>
+     <p>We can drop/delete/remove a MySQL database quickly with the MySQL DROP DATABASE command.
+         It will delete the database along with all the tables, indexes, and constraints permanently.
+          Therefore, we should have to be very careful
+         while removing the database in MySQL because we will lose all the data available in the database.
+     </p>
+     <p><strong> Syntax-DROP DATABASE database_name;  </strong></p>
+     <h3>Example</h3>
+     <img src="ddl/drop.PNG" alt="drop"><br><br>
+     <hr>
+     <h2>How to use a database?</h2>
+    
+     <p>The USE statement of MySQL helps you to select/use a database. You can also change to another
+         database with this statement. Once you set 
+        the current database it will be same until the end of the session unless you change the it.
+
+     </p>
+     <p><strong>Syntax-USE database_name;</strong></p>
+     <h3>Example</h3>
+     <img src="ddl/use.PNG" alt="use">
+     <br><br><hr>
+     <h2>How to create a table?</h2>
+     <p>
+        A table is used to organize data in the form of rows and columns and used for both storing and
+         displaying records in the structure format. 
+        It is similar to worksheets in the spreadsheet application.
+     </p>
+     <p><strong>Syntax-CREATE TABLE [IF NOT EXISTS] table_name(  
+        column_definition1,  
+        column_definition2,  
+        ........,  
+        table_constraints  
+    );  </strong></p>
+    <h3>Example</h3>
+    <img src="ddl/create.PNG" alt="create"><br><br><hr>
+    <h2>How to show existing tables in a database?</h2>
+    <p>
+        The show or list table is very important when we have many databases that contain various tables.
+         Sometimes the table names are the same in many databases; in that case, this query is very useful.
+    </p>
+    <h3>Example</h3> 
+    <p><strong>Syntax- SHOW TABLES;  </strong></p>
+    <img src="ddl/stables.PNG" alt="show"><br><br><hr>
+    <h2>How to see  a structure of a table?</h2>
+    <p>DESCRIBE means to show the information in detail. Since we have tables in MySQL, so we will use the DESCRIBE
+         command to show the structure of our table, such as column names, 
+         constraints on column names, etc.</p>
+    <p><strong>Syntax- DESC table_name;</strong></p>
+    <h3>Example</h3>
+
+    <img src="ddl/desc.PNG" alt="desc"></img>  <br><br><hr>
+    <h2>How to drop a table?</h2>
+    <p>A SQL DROP TABLE statement is used to delete a table definition and all data from a table.
+
+        This is very important to know that once a table is deleted all the information available 
+        in the table is lost forever, so we have to be very careful when using this command.</p> 
+     
+    <p><strong>Syntax- DROP  TABLE tablename;</strong></p>
+    <h3>Example</h3>  
+    <img src="ddl/dropta.PNG" alt="drop"> <br><br>
+
+    <hr> <br><br>
+
+    <i><strong>For alter table commands click on next.</strong></i><br><br>
+    <form action="ddl2.html">
+        <button class="gfg" type="submit"> next</button>
+    </form>
+    
+
+    
+
+
+
+    
+</body>
+</html>

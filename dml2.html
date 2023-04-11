@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>dml2</title>
+	<link rel="stylesheet" href="blog.css">
+</head>
+<body>
+	<div class="container">
+        <h1>
+       Aggregate Function
+        
+    </h1>
+    </div>
+    <br>
+    <hr>
+    <p>Aggreate function , also called group functions are bult-in Sql functions that operate on groups of rows and return only one value for entire group of table. Aggregate functions are used to produced summarized results. By default all rows are treated as group. </p>
+    <h2> What is SUM() Function?</h2>
+    <p>The function is used to get a sum of a numeric column.
+    </p>
+    <p><strong>Syntax-SELECT SUM(colname)FROM table_name ;    </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/sum.png" alt="database"><br><br><hr>
+    <h2> What is count() Function?</h2>
+    <p>The function returns the number of rows in the table that  specifies in query
+    </p>
+    <p><strong>Syntax-SELECT COUNT(*)FROM table_name ;    </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/count.png" alt="database"><br><br><hr>
+    <h2> What is MAX() Function?</h2>
+    <p>The function is used to get a maximum value of a numeric column.
+    </p>
+    <p><strong>Syntax-SELECT MAXcolname)FROM table_name ;    </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/max.png" alt="database"><br><br><hr>
+    <h2> What is MIN() Function?</h2>
+    <p>The function is used to get minimum value in a column.
+    </p>
+    <p><strong>Syntax-SELECT MIN(colname)FROM table_name ;    </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/min.png" alt="database"><br><br><hr>
+    <h2> What is AVG() Function?</h2>
+    <p>The function is used to get a averege of a numeric column.
+    </p>
+    <p><strong>Syntax-SELECT Average(colname)FROM table_name ;    </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/avg.png" alt="database"><br><br><hr>
+    <h2> What is Group by clause?</h2>
+    <p>
+    The MYSQL GROUP BY Clause is used to collect data from multiple records and group the result by one or more column. It is generally used in a SELECT statement.
+
+       You can also use some aggregate functions like COUNT, SUM, MIN, MAX, AVG etc. on the grouped column.
+    </p>
+    <p><strong>Syntax-SELECT expression1, expression2, ... expression_n,   
+      aggregate_function (expression)  
+      FROM tables  
+     [WHERE conditions]  
+      GROUP BY expression1, expression2, ... expression_n;       </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/groupby.png" alt="database"><br><br><hr>
+    <h2> What is Having clause?</h2>
+    <p>
+    MySQL HAVING Clause is used with GROUP BY clause. It always returns the rows where condition is TRUE.
+    </p>
+    <p><strong>Syntax-SELECT expression1, expression2, ... expression_n,   
+      aggregate_function (expression)  
+      FROM tables  
+     [WHERE conditions]  
+      GROUP BY expression1, expression2, ... expression_n Having condition;       </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/having.png" alt="database"><br><br><hr>
+    <h2> What is Nested queries?</h2>
+    <p>
+    Nested Query is a query with in a query .Sql has ability to nest queries within one other.
+    </p>
+   
+    <h2>Example:</h2>
+    
+    <img src="dml/subquery.png" alt="database"><br><br><hr>
+     <i><strong>For Joins  click on next.</strong></i><br><br>
+    <form action="dml3.html">
+        <button class="gfg" type="submit"> next</button>
+    </form>
+    
+
+
+
+
+
+
+
+
+</body>
+</html>

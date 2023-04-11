@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>dml commands</title>
+	<link rel="stylesheet" href="blog.css">
+</head>
+<body>
+	 <div class="container">
+        <h1>
+       Data Manipulation Language (DML)
+        
+    </h1>
+    </div>
+    <br>
+    <hr>
+    <p>
+        Data Manipulation Language (DML) is a database language, which enables user to manipulate data in the database.
+        DML  is a language used to insert, delete and modify database information. DML command is not auto-commited . 
+    </p>
+     <h2> How to insert data in a table?</h2>
+    <p> The insert command is used to insert new rows and records into a table. Values can be inserted for all columns or
+        for the selected columns. 
+    </p>
+    <p><strong>Syntax- INSERT INTO table_name(COLNAME, COLNAME....) VALUES (values,values......);
+       </strong> </p>
+    <h2>Example:</h2>
+    <p>->For selected columns </p>
+    
+    <img src="dml/isingle.png" alt="database">
+    <p>->For all columns and mutltiple insertion .</p>
+    <img src="dml/imultiple.png" alt="database">
+
+    <br><br><hr>
+    <h2> How to retrieve data in table?</h2>
+    <p>The SELECT command is used to query or retrieve data from a table in the database. A data can retrieve information from specified columns or from all columns.
+
+    </p>
+    <p><strong>Syntax-SELECT column_list FROM table_name ;    </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/select.png" alt="database"><br><br><hr>
+
+    
+     <h2> What is Where clause?</h2>
+    <p>The WHERE clause is used when you want to retrieve specific information from a table excluding other irrelevant data.
+    </p>
+    <p><strong>Syntax-SELECT column_list FROM table_name  WHERE condition;    </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/where.png" alt="database"><br><br><hr>
+    <h2> What is Like operator ? </h2>
+    <p>The LIKE operator  is used when you want to retrieve all rows in a table whose column values match a specified pattern.
+        We use wild cards character "%" represent more than one character  and "_" which represent single character.
+    </p>
+    <p><strong>Syntax-SELECT column_list FROM table_name  WHERE like '';   </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/like1.png" alt="database"><br>
+    <img src="dml/like2.png" alt="database">
+    <br><br><hr>
+     <h2> What is IN operator?</h2>
+    <p>The In operator is used when you want to compare a column with more than one value.It is similar to an or condition.
+    </p>
+    <p><strong>Syntax-SELECT column_list FROM table_name  WHERE IN(values..);    </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/in.png" alt="database"><br><br><hr>
+     <h2> What is  NOT IN operator?</h2>
+    <p>The In operator is used when you want to compare a column with more than one value which in not specified in query.It is similar to an or condition.
+    </p>
+    <p><strong>Syntax-SELECT column_list FROM table_name  WHERE NOT IN(values..);    </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/notin.png" alt="database"><br><br><hr>
+    <h2> What is  BETWEEN operator?</h2>
+    <p>The BETWEEN is used when you want to compare a data for a range of values.
+    </p>
+    <p><strong>Syntax-SELECT column_list FROM table_name  WHERE BETWEEN value and value; </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/between.png" alt="database"><br><br><hr>
+    <h2> How to work with null?</h2>
+    <p>It is not possible to test for NULL values with comparison operators, such as =, <, or >.
+
+           We will have to use the IS NULL and IS NOT NULL operators instead.
+    </p>
+    <p><strong>Syntax-SELECT column_names
+       FROM table_name
+        WHERE column_name IS NULL; </strong> </p>
+    <h2>Example of null:</h2>
+    
+    <img src="dml/null.png" alt="database">
+    <h2>Example of not null:</h2>
+
+
+    <img src="dml/nonull.png" alt="database"><br><br><hr>
+    <h2> What is  Distinct?</h2>
+    <p>MySQL DISTINCT clause is used to remove duplicate records from the table and fetch only the unique records. The DISTINCT clause is only used with the SELECT statement.
+    </p>
+    <p><strong>Syntax-SELECT DISTINCT expressions  
+     FROM tables  
+     [WHERE conditions];    </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/distinct.png" alt="database"><br><br><hr>
+    <h2> What is  order by ?</h2>
+    <p>The order of rows returned in a query result is undefined . Sql uses the oder by clause to impose an order on the result of a query.
+    </p>
+    <p><strong>Syntax-SELECT column_list From table_name [where condition ] ORDER BY (col1,col2,col3..);    </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/orderby.png" alt="database"><br><br><hr>
+    <h2> How to delete row in a  table?</h2>
+    <p>The DELETE command is used to delete data from a table in the database. A data can deleted  from specified columns or from all columns.
+
+    </p>
+    <p><strong>Syntax-DELETE FROM  table_name [where condition];    </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/deletesingle.png" alt="database"><br>
+    <img src="dml/delete.png" alt="database">
+    <br><br><hr>
+    <h2> How to update data in table?</h2>
+    <p>The SELECT command is used to update data from a table in the database. A data can updated  information from specified columns or from all columns.
+
+    </p>
+    <p><strong>Syntax-UPDATE  Table_name set colname=value [where condition];    </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/update.png" alt="database"><br>
+    <img src="dml/updateout.png" alt="database">
+    <br><br><hr>
+     <i><strong>For aggregate functions click on next.</strong></i><br><br>
+    <form action="dml2.html">
+        <button class="gfg" type="submit"> next</button>
+    </form>
+    
+ 
+    
+
+
+
+
+
+    
+
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>plsql</title>
+	<link rel="stylesheet" href="blog.css">
+</head>
+<body>
+	<div class="container">
+        <h1>
+      PL/SQL
+    </h1>
+    </div>
+    <br>
+    <hr>
+    <p>
+
+      Our PL/SQL tutorial includes all topics of PL/SQL language such as conditional statements, loops, arrays, string, exceptions, collections, records, triggers, functions, procedures, cursors etc</p>
+
+      <P>PL/SQL includes procedural language elements like conditions and loops. It allows declaration of constants and variables, procedures and functions, types and variable of those types and triggers. It can support Array and handle exceptions (runtime errors). After the implementation of version 8 of Oracle database have included features associated with object orientation. You can create PL/SQL units like procedures, functions, packages, types and triggers, etc. which are stored in the database for reuse by applications.</P>
+       <h2> How to declare variable in PL/SQL?</h2>
+       
+    <p>You must declare the PL/SQL variable in the declaration section or in a package as a global variable. After the declaration, PL/SQL allocates memory for the variable's value and the storage location is identified by the variable name.
+    </p>
+    <p><strong>Syntax-variable_name [CONSTANT] datatype [NOT NULL] [:= | DEFAULT initial_value]  
+  </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/variable.png" alt="database"><br><br><hr>
+    <h2> How to declare  constant variable in PL/SQL?</h2>
+       
+    <p>A constant is a value used in a PL/SQL block that remains unchanged throughout the program. It is a user-defined literal value. It can be declared and used instead of actual values.
+    </p>
+    <p><strong>Syntax-constant_name CONSTANT datatype := VALUE;  
+  </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/constanr.png" alt="database"><br><br><hr>
+     <h2> PL/SQL If-Else?</h2>
+       
+    <p>PL/SQL supports the programming language features like conditional statements and iterative statements. Its programming constructs are similar to how you use in programming languages like Java and C++.
+    </p>
+    <p><strong>Syntax-IF condition   
+    THEN  
+     {...statements to execute when condition is TRUE...}  
+    ELSE  
+     {...statements to execute when condition is FALSE...}  
+    END IF;   
+ 
+  </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/if.png" alt="database"><br><br><hr>
+    <h2> PL/SQL While loop</h2>
+       
+    <p>PL/SQL while loop is used when a set of statements has to be executed as long as a condition is true, the While loop is used. The condition is decided at the beginning of each iteration and continues until the condition becomes false.
+    </p>
+    <p><strong>Syntax-WHILE <condition>   
+ LOOP statements;   
+END LOOP;  
+ 
+  </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/while.png" alt="database"><br><br><hr>
+     <h2> PL/SQL FOR Loop</h2>
+       
+    <p>PL/SQL for loop is used when when you want to execute a set of statements for a predetermined number of times. The loop is iterated between the start and end integer values. The counter is always incremented by 1 and once the counter reaches the value of end integer, the loop ends.
+    </p>
+    <p><strong>Syntax-FOR counter IN initial_value .. final_value LOOP  
+  LOOP statements;   
+END LOOP;  
+ 
+  </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/for.png" alt="database"><br><br><hr>
+<h2> PL/SQL function</h2>
+       
+    <p>The PL/SQL Function is very similar to PL/SQL Procedure. The main difference between procedure and a function is, a function must always return a value, and on the other hand a procedure may or may not return a value. Except this, all the other things of PL/SQL procedure are true for PL/SQL function too.
+    </p>
+    <p><strong>Syntax-CREATE [OR REPLACE] FUNCTION function_name [parameters]  
+ 
+  </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/function1.png" alt="database"><br>
+    <img src="dml/function2.png" alt="database">
+    <br><br><hr>
+   <h2> PL/SQL Cursor</h2>
+       
+    <p>When an SQL statement is processed, Oracle creates a memory area known as context area. A cursor is a pointer to this context area. It contains all information needed for processing the statement. In PL/SQL, the context area is controlled by Cursor. A cursor contains information on a select statement and the rows of data accessed by it.
+    </p>
+    
+    <h2>Example:</h2>
+    
+    <img src="dml/cursor.png" alt="database"><br><br><hr>
+     <h2> PL/SQL Exception Handling</h2>
+       
+    <p>PL/SQL facilitates programmers to catch such conditions using exception block in the program and an appropriate action is taken against the error condition.
+    </p>
+    
+    <h2>Example:</h2>
+    
+    <img src="dml/exception.png" alt="database"><br><br><hr>
+    <h2> PL/SQL Triggers</h2>
+       
+    <p>Trigger is invoked by Oracle engine automatically whenever a specified event occurs.Trigger is stored into database and invoked repeatedly, when specific condition match.
+    </p>
+    
+    <h2>Example:</h2>
+    
+    <img src="dml/trigger.png" alt="database"><br><br><hr>
+     <i><strong>For  Homepage click on next.</strong></i><br><br>
+    <form action="index.html">
+        <button class="gfg" type="submit"> next</button>
+    </form>
+    
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

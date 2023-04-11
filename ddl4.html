@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>constraints</title>
+	<link rel="stylesheet" href="blog.css">
+</head>
+<body>
+	<div class="container">
+        <h1>
+        	 MySql Constraints
+       
+        
+    </h1>
+    </div><br><hr>
+    <p>The constraint in MySQL is used to specify the rule that allows or restricts what values/data will be stored in the table. They provide a suitable method to ensure data accuracy and integrity inside the table. It also helps to limit the type of data that will be inserted inside the table. If any interruption occurs between the constraint and data action, the action is failed.</p>
+    <h2> How add a primary key in a table?</h2>
+    <p>This constraint is used to identify each record in a table uniquely. If the column contains primary key constraints, then it cannot be null or empty. A table may have duplicate columns, but it can contain only one primary key. It always contains unique value into a column.
+
+    </p>
+    <p><strong>Syntax-CREATE TABLE table_name (  
+    colname dtype PRIMARY KEY,   
+     colname dtype,   
+    );    </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/primary.png" alt="database"><br><br><hr>
+
+    <h2> How add a foreign  key in a table?</h2>
+    <p>This constraint is used to link two tables together. It is also known as the referencing key. A foreign key column matches the primary key field of another table. It means a foreign key field in one table refers to the primary key field of another table.
+    
+
+    </p>
+    <p><strong>Syntax-CREATE TABLE table_name (  
+    colname dtype FOREIGN KEY ( colname) REFERENCES paren_table(parent_colname)  
+        ,   
+     colname dtype,   
+    );    </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/foregin.png" alt="database"><br><br><hr>
+
+    <h2> How add a not null key in a table?</h2>
+    <p>This constraint specifies that the column cannot have NULL or empty values. The below statement creates a table with NOT NULL constraint.
+    
+
+    </p>
+    <p><strong>Syntax-CREATE TABLE table_name (  
+    colname dtype not null,
+     colname dtype,   
+    );    </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/notnull.png" alt="database"><br><br><hr>
+    <h2> How add a unique key in a table?</h2>
+    <p>This constraint ensures that all values inserted into the column will be unique. It means a column cannot stores duplicate values. MySQL allows us to use more than one column with UNIQUE constraint in a table.
+
+    </p>
+    <p><strong>Syntax-CREATE TABLE table_name (  
+    colname dtype unique,
+     colname dtype,   
+    );    </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/unique.png" alt="database"><br><br><hr>
+    <h2> How add a check key in a table?</h2>
+    <p>It controls the value in a particular column. It ensures that the inserted value in a column must be satisfied with the given condition. In other words, it determines whether the value associated with the column is valid or not with the given condition.
+
+    </p>
+    <p><strong>Syntax-CREATE TABLE table_name (  
+    colname dtype check(condition),
+     colname dtype,   
+    );    </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/check.png" alt="database"><br><br><hr>
+    <h2> How add a default key in a table?</h2>
+    <p>This constraint is used to set the default value for the particular column where we have not specified any value. It means the column must contain a value, including NULL.
+
+    </p>
+    <p><strong>Syntax-CREATE TABLE table_name (  
+    colname dtype default'value',
+     colname dtype,   
+    );    </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/def.png" alt="database"><br><br><hr>
+    
+     <i><strong>To come back to homepage click on next.</strong></i><br><br>
+    <form action="index.html">
+        <button class="gfg" type="submit"> next</button>
+    </form>
+    
+ 
+    
+    
+
+    
+    
+    
+
+    
+    
+
+
+	
+
+</body>
+</html>

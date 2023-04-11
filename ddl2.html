@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Alter commands</title>
+	<link rel="stylesheet" href="blog.css">
+</head>
+<body>
+<div class="container">
+        <h1>
+        Alter Commands
+        
+    </h1>
+    </div>
+    <br>
+    <hr>
+     <h2> what is Alter Command?</h2>
+    <p>MySQL ALTER statement is used when you want to change the name of your table or any table field. It is also used to add or delete an existing column in a table.
+
+      The ALTER statement is always used with "ADD", "DROP" and "MODIFY" commands according to the situation.</p>
+    <h2>How to add a column in the table?</h2>  
+    <p><strong>Syntax-ALTER TABLE table_name  
+        ADD new_column_name column_definition  
+          [ FIRST | AFTER column_name ];  </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/alteradd.png" alt="database"><br><br><hr>
+     <h2> How to drop a column in a table?</h2>
+    <p> Let's take an example to drop the column in a table.
+      </p>
+    
+    <p><strong>Syntax-ALTER TABLE table_name  
+         DROP COLUMN column_name;    </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/alterdrop.png" alt="database"><br><br><hr>
+    <h2> How to modify a column in a table?</h2>
+    <p> Let's take an example to modify the column in a table.The MODIFY command is used to change the column definition of the table.
+      </p>
+    
+    <p><strong>Syntax-ALTER TABLE table_name  
+         MODIFY column_name column_definition  
+      [ FIRST | AFTER column_name ];  </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/altermod.png" alt="database"><br><br><hr>
+
+    <i><strong>For view  commands click on next.</strong></i><br><br>
+    <form action="ddl3.html">
+        <button class="gfg" type="submit"> next</button>
+    </form>
+    
+</body>
+</html>

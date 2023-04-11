@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>view commands</title>
+	<link rel="stylesheet" href="blog.css">
+</head>
+<body>
+	<div class="container">
+        <h1>
+        	View in MySql
+       
+        
+    </h1>
+    </div>
+
+    <br>
+    <hr>
+    <h2> How to create a view?</h2>
+    <p>We can create a new view by using the CREATE VIEW and SELECT statement. SELECT statements are used to take data from the source table to make a VIEW.
+    </p>
+    <p><strong>Syntax-CREATE [OR REPLACE] VIEW view_name AS    
+         SELECT columns    
+       FROM tables    
+        [WHERE conditions];    </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/cview.png" alt="database"><br><br><hr>
+    <h2> How to delete a view?</h2>
+    <p>We can drop the existing VIEW by using the DROP VIEW statement.
+    <p>
+    </p>
+    <p><strong>Syntax-DROP VIEW [IF EXISTS] view_name;      </strong> </p>
+    <h2>Example:</h2>
+    
+    <img src="dml/dview.png" alt="database"><br><br><hr>
+    <h2> How to insert a value in a view?</h2>
+    <p>We can insert the existing VIEW by using the insert statement.
+    <p>
+    </p>
+    <p><strong>Syntax- INSERT INTO VIEW view_name (values, values...);      </strong> </p>
+    <h2>Example:</h2>
+
+    
+    <img src="dml/iview.png" alt="database"><br><br><hr>
+    <h2> How to create a read only view ?</h2>
+    <p>We can create a read only view by using group function. In  read only view you can't insert, delete and update values in view.
+    <p>
+    </p>
+    <p><strong>Syntax- CREATE VIEW view_name  as SELECT group_function(COLNAME) FROM TABLE_NAME;   </strong> </p>
+    <h2>Example:</h2>
+    
+    
+    <img src="dml/rview.png" alt="database"><br><br><hr>
+    <h2> How to  update a  view ?</h2>
+    <p>We can create a read only view by using update keyword. 
+    <p>
+    </p>
+    <p><strong>Syntax- UPDATE VIEW set colname='value' where [condition];  </strong> </p>
+    <h2>Example:</h2>
+    
+    
+    <img src="dml/uview.png" alt="database"><br><br><hr>
+
+    <i><strong>For Constraints commands click on next.</strong></i><br><br>
+    <form action="ddl4.html">
+        <button class="gfg" type="submit"> next</button>
+    </form>
+    
+
+
+
+</body>
+</html>
